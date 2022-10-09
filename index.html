@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FULL BASE</title>
+<link rel="icon" href="F:/Миши/Сайт с видео/images/previu.jpg" type="images/.jpg">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="description" lang="ru" content="На нашем сайте ВЫ сможете послушать самую лучшую музыку">
+<meta name="description" lang="en" content="On our website YOU can listen to the best music">
+<meta name="keywords" lang="ru" content="Музыка, ремиксы, песни, движ">
+<meta name="keywords" lang="en" content="Music, remixes, songs">
+<meta name="robots" content="index, follow">
+<script src="https://github.com/jquery/jquery/issues/jquery-3.5.1.min.js"></script>
+</head>
+
+<style>
+body {
+background: #000000;
+color: #FFFFFF;
+} 
+#header {
+     background: #000000;
+     color: #FFFFFF;
+     width: 100%;
+     height: 100px;
+     position: fixed;
+}
+
+#container {
+     background: #000000;
+     margin: auto auto;
+     text-align: center;
+     width: 100%;
+     height: 3600px;
+}
+#navigation {
+     background: #000000;
+     width: 100%;
+     height: 150px;
+}
+#sidebar {
+     background: #000000;
+     color: #FFFFFF;
+     float: right;
+     width: 10%;
+     height: 3350px;
+     position: fixed;
+}
+#content {
+     background: #FFFFFF;
+     margin: 0 auto;
+     width: 78%;
+     height: 3350px;
+     color: #000000;
+}
+#clear {
+     clear: both;
+}
+ 
+#footer {
+    background: #000000;
+    width: 100%;
+    height: 40px;
+    color: #FFFFFF;
+}
+a {
+color: #FFFFFF;
+}
+#scroll-top {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+}
+
+#scroll-top button {
+  position: relative;
+  overflow: hidden;
+  height: 48px;
+  width: 48px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  background: #21c984;
+  transition: width 0.5s;
+  border-radius: 100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#scroll-top button span {
+  display: inline-block;
+  transition: opacity 0.3s ease 0s, transform 0.5s ease 0s;
+  line-height: 48px;
+  font-size: 20px;
+  width: 100%;
+}
+
+#scroll-top button span::before {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 200%;
+  opacity: 0;
+  content: attr(data-hover);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#scroll-top:hover button {
+  width: 120px;
+  background: #9b59b6;
+}
+
+#scroll-top:hover button span {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+#scroll-top:hover button span:before {
+  opacity: 1;
+}
+
+#scroll-top button:active {
+  background: #21c984;
+}
+</style>
+<script>
+jQuery(document).ready(function($) {
+  $("#scroll-top > button").on("click", function(e) {
+	var body = $("html, body");
+	body.stop().animate({ scrollTop: 0 }, 500, "swing");
+  });
+});
+</script>
+<body>
+<script src="/assets/js/jquery-3.5.1.min.js"></script>
+<div id="container">
+	<div id="header">
+	<img align="left" src="F:/Миши/Сайт с видео/images/ava.jpg"><h1 align="left" ><big>FULL BASE</big></h1><button атрибуты>Надпись на кнопке</button>
+	</div>	 
+	<div id="navigation">
+	</div>	
+<div id="sidebar">
+	</div>		 	 
+	<div id="content">
+<h1 align="center">Новые ремиксы</h1>
+<div id="scroll-top">
+<button><span data-hover="Наверх"><i class="fa fa-arrow-up"></i></span></button>
+</div>
+	</div>	 
+	<div id="clear">
+	</div>					   
+	<div id="footer">
+	<h2><a href="https://github.com/7zhih7"</a>Другие наши проекты</h2>
+	</div>
+</div>
+</body>
+</html>
